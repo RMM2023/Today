@@ -10,6 +10,26 @@
           <theme>@style/Theme.Today</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main_screen.xml">
+        <config>
+          <theme>@style/Theme.Today</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_task_description.xml">
+        <config>
+          <theme>@style/Theme.Today</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_task_edit.xml">
+        <config>
+          <theme>@style/Theme.Today</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_today_screen.xml">
+        <config>
+          <theme>@style/Theme.Today</theme>
+        </config>
+      </layout>
     </layouts>
   </component>
   <component name="AutoImportSettings">
@@ -17,7 +37,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="582bf3ad-ba18-42cc-8f1d-a62fa94c8fd9" name="Changes" comment="Начало">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/App.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/api/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/local/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/remote/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/repository/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/di/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/domain/api/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/domain/model/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/domain/repository/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/domain/usecase/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/presentation/ui/MainScreenFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/presentation/ui/TaskDescriptionFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/presentation/ui/TaskEditFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/presentation/ui/TodayScreenFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/presentation/viewmodel/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/edit_text_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_screen.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_task_description.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_task_edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_today_screen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/presentation/ui/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,21 +79,31 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile" />
+        <option value="valueResourceFile" />
+        <option value="Kotlin Class" />
+        <option value="resourceFile" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "RMM2023"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;RMM2023&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/RMM2023/Today.git",
-    "accountId": "6f8842be-b703-4642-bf17-6f6148d4bf2e"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RMM2023/Today.git&quot;,
+    &quot;accountId&quot;: &quot;6f8842be-b703-4642-bf17-6f6148d4bf2e&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -57,18 +113,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Portfolio/Today/Today&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Android App.app.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Portfolio/Today/Today/app/src/main/java/com/portfoliormm/today/presentation/viewmodel"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Portfolio\Today\Today\app\src\main\java\com\portfoliormm\today\presentation\viewmodel" />
+      <recent name="C:\Portfolio\Today\Today\app\src\main\java\com\portfoliormm\today\domain\usecase" />
+      <recent name="C:\Portfolio\Today\Today\app\src\main\java\com\portfoliormm\today\domain\repository" />
+      <recent name="C:\Portfolio\Today\Today\app\src\main\java\com\portfoliormm\today\domain\model" />
+      <recent name="C:\Portfolio\Today\Today\app\src\main\java\com\portfoliormm\today\domain\api" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.portfoliormm.today.presentation.ui" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="Today.app.main" />
@@ -156,7 +225,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733658008301</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Начало">
+      <option name="closed" value="true" />
+      <created>1733658243334</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733658243334</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Начало">
+      <option name="closed" value="true" />
+      <created>1733659206999</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733659206999</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
