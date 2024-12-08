@@ -52,6 +52,9 @@
             android:layout_gravity="center"
             android:textSize="20sp"
             style="@style/card_main"/>
+    </androidx.cardview.widget.CardView>
+
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/background_card2"
