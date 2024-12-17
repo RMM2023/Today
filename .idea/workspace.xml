@@ -110,7 +110,7 @@
           <theme>@style/Theme.Today</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/list_favourits_cinema.xml">
+D      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/list_favourites_cinema.xml">
         <config>
           <theme>@style/Theme.Today</theme>
         </config>
@@ -131,23 +131,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="582bf3ad-ba18-42cc-8f1d-a62fa94c8fd9" name="Changes" comment="Иконки, верстки основных экранов (кроме информационных (api)), элементы">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/filter_icon.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/kianu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/like_red.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/paddington.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ru.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/star_yellow.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_favourits_cinema.xml" afterDir="false" />
+    <list default="true" id="582bf3ad-ba18-42cc-8f1d-a62fa94c8fd9" name="Changes" comment="Верстка">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/detailed_information_cinema.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/detailed_information_cinema.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_info_cinema.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_info_cinema.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_list_favourites_cinema.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_list_favourites_cinema.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_my_cinema.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_my_cinema.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_my_culture.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_my_culture.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_task_main_today_screen_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_task_main_today_screen_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tasks_main_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tasks_main_screen.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,7 +339,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734013708311</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Верстка">
+      <option name="closed" value="true" />
+      <created>1734454732197</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734454732197</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -372,6 +365,7 @@
     <MESSAGE value="Начало" />
     <MESSAGE value="Шрифты" />
     <MESSAGE value="Иконки, верстки основных экранов (кроме информационных (api)), элементы" />
-    <option name="LAST_COMMIT_MESSAGE" value="Иконки, верстки основных экранов (кроме информационных (api)), элементы" />
+    <MESSAGE value="Верстка" />
+    <option name="LAST_COMMIT_MESSAGE" value="Верстка" />
   </component>
 </project>
