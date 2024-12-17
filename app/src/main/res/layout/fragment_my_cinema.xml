@@ -11,12 +11,21 @@
         android:id="@+id/text_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Мой кинотеатр"
-        style="@style/heading"
-        android:textAlignment="center"
+        android:paddingTop="8dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        android:text="Мой кинотеатр"
+        style="@style/heading"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="@+id/text_heading"
+        app:layout_constraintBottom_toBottomOf="@+id/text_heading"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="4dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/filter_icon"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/search_card"
@@ -25,7 +34,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_heading"
-        android:layout_marginHorizontal="8dp"
+        android:layout_marginHorizontal="16dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/dark_dark_green"
         app:cardElevation="16dp"
@@ -107,13 +116,13 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginVertical="8dp"
                     android:textAlignment="center"
-                    android:text="Новинки"
+                    android:text="Премьеры"
                     android:textColor="@color/white"
                     android:textSize="18sp"
                     android:fontFamily="@font/montserrat_bold"/>
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rec_new_cinema"
+                    android:id="@+id/rec_premier_cinema"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@+id/text_new_cinema"
@@ -130,7 +139,7 @@
                     android:layout_height="4dp"
                     android:background="@drawable/line_shape"
                     android:layout_marginVertical="32dp"
-                    app:layout_constraintTop_toBottomOf="@+id/rec_new_cinema"
+                    app:layout_constraintTop_toBottomOf="@+id/rec_premier_cinema"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     android:elevation="16dp"/>
@@ -151,6 +160,7 @@
                     android:fontFamily="@font/montserrat_bold"/>
 
                 <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rec_recommendations_cinema"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@+id/text_recommendations_cinema"

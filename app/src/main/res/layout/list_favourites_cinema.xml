@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardCornerRadius="16dp"
+        android:backgroundTint="@color/dark_green"
+        android:elevation="32dp"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_cinema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/rectangle"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:id="@+id/text_cinema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/image_cinema"
+                app:layout_constraintBottom_toTopOf="@+id/image_share"
+                android:layout_marginBottom="4dp"
+                android:text="Приключения Паддингтона 3"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/image_share"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/text_cinema"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/ic_share"
+                android:layout_marginTop="4dp"
+                android:layout_marginHorizontal="8dp"/>
+
+            <ImageView
+                android:id="@+id/image_like"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:layout_constraintTop_toTopOf="@+id/image_share"
+                app:layout_constraintTop_toBottomOf="@+id/text_cinema"
+                app:layout_constraintStart_toEndOf="@+id/image_share"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/plus"
+                android:layout_marginVertical="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="34dp"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:layout_constraintTop_toTopOf="@+id/image_share"
+                app:layout_constraintTop_toBottomOf="@+id/text_cinema"
+                app:layout_constraintEnd_toStartOf="@+id/image_share"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/like_red"
+                android:layout_marginVertical="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="34dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

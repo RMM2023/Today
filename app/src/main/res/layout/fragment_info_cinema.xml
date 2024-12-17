@@ -1,14 +1,216 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.ui.InfoCinemaFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.ui.InfoCinemaFragment"
+    android:background="@color/green">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/text_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingLeft="8dp"
+        android:text="Мой кинотеатр"
+        style="@style/heading"/>
 
-</FrameLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_info_cinema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_heading"
+        android:backgroundTint="@color/dark_dark_green"
+        android:layout_marginTop="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/const_image_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_poster"
+                android:layout_width="140dp"
+                android:layout_height="200dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="16dp"
+                app:cardCornerRadius="16dp"
+                android:elevation="16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/paddington"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/text_name_cinema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/card_poster"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Приключения Паддингтона 3"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/text_name_en_cinema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/text_name_cinema"
+                app:layout_constraintStart_toEndOf="@+id/card_poster"
+                android:layout_marginStart="8dp"
+                android:text="Paddington in Peru"
+                android:textColor="@color/grey"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/text_age_rating_cinema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/text_name_cinema"
+                app:layout_constraintStart_toEndOf="@+id/text_name_en_cinema"
+                android:layout_marginStart="32dp"
+                android:text="6+"
+                android:textColor="@color/grey"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/text_year_production_cinema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/text_name_en_cinema"
+                app:layout_constraintStart_toEndOf="@+id/card_poster"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Год производства:"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/text_country_cinema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/text_year_production_cinema"
+                app:layout_constraintStart_toEndOf="@+id/card_poster"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Страна:"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/text_genre_cinema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/text_country_cinema"
+                app:layout_constraintStart_toEndOf="@+id/card_poster"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Жанр:"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/text_slogan_cinema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/text_genre_cinema"
+                app:layout_constraintStart_toEndOf="@+id/card_poster"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Слоган:"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/text_director_cinema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/text_slogan_cinema"
+                app:layout_constraintStart_toEndOf="@+id/card_poster"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Режиссер:"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/text_script_cinema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/text_director_cinema"
+                app:layout_constraintStart_toEndOf="@+id/card_poster"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Премьера в мире:"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/text_producer_cinema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/text_script_cinema"
+                app:layout_constraintStart_toEndOf="@+id/card_poster"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Премьера в России:"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/text_rating_kino_poisk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/text_producer_cinema"
+                app:layout_constraintStart_toEndOf="@+id/card_poster"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Кинопоиск:"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/text_rating_imdb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/text_rating_kino_poisk"
+                app:layout_constraintStart_toEndOf="@+id/card_poster"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="IMDB:"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/text_rating_imdb"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:backgroundTint="@color/dark_green">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    tools:listitem="@layout/detailed_information_cinema"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
