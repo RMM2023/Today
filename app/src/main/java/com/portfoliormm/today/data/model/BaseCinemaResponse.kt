@@ -1,6 +1,6 @@
-package com.portfoliormm.today.data.model.dataclass
+package com.portfoliormm.today.data.model
 
-data class BaseCinemaData(
+data class BaseCinemaResponse(
     val kinopoiskId: Int,
     val kinopoiskHDId: Int,
     val imdbId: Int,

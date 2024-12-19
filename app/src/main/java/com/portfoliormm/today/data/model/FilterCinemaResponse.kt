@@ -1,10 +1,10 @@
-package com.portfoliormm.today.data.model.dataclass
+package com.portfoliormm.today.data.model
 
-data class FilterCinema(
+data class FilterCinemaResponse(
     val total: Int,
     val totalPages: Int,
-    val items: List<BaseCinemaData>,
-    val ratingKinopoisk: List<BaseCinemaData>,
+    val items: List<BaseCinemaResponse>,
+    val ratingKinopoisk: List<BaseCinemaResponse>,
     val ratingImdb: Int,
     val year: Int,
     val type: String,

@@ -1,6 +1,6 @@
-package com.portfoliormm.today.data.model.dataclass
+package com.portfoliormm.today.data.model
 
-data class KeyWord(
+data class FilmsByWordResponse(
     val keyword: String,
     val pagesCount: Int,
     val searchFilmsCountResult: Int,

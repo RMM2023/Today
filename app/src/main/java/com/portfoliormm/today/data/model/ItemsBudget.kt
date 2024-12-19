@@ -1,4 +1,4 @@
-package com.portfoliormm.today.data.model.dataclass
+package com.portfoliormm.today.data.model
 
 data class ItemsBudget(
     val type: String,

@@ -110,7 +110,7 @@
           <theme>@style/Theme.Today</theme>
         </config>
       </layout>
-D      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/list_favourites_cinema.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/list_favourites_cinema.xml">
         <config>
           <theme>@style/Theme.Today</theme>
         </config>
@@ -131,8 +131,25 @@ D      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/list_favourites
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="582bf3ad-ba18-42cc-8f1d-a62fa94c8fd9" name="Changes" comment="Верстка">
+    <list default="true" id="582bf3ad-ba18-42cc-8f1d-a62fa94c8fd9" name="Changes" comment="Data_Class">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/remote/FilmsApiServise.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/api/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/ActorDirector.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/ActorDirector.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/BaseCinemaData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/BaseCinemaData.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/Budget.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/Budget.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/Films.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/Films.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/FilterCinema.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/FilterCinema.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/Genres.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/Genres.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/ItemsBudget.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/ItemsBudget.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/ItemsPremiere.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/ItemsPremiere.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/ItemsWebsite.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/ItemsWebsite.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/KeyWord.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/KeyWord.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/Premiere.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/Premiere.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/Website.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/Website.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/Сountries.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/Сountries.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,6 +172,8 @@ D      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/list_favourites
         <option value="Kotlin Class" />
         <option value="resourceFile" />
         <option value="layoutResourceFile" />
+        <option value="Kotlin Data Class" />
+        <option value="Kotlin Interface" />
       </list>
     </option>
   </component>
@@ -209,6 +228,8 @@ D      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/list_favourites
       <recent name="C:\Portfolio\Today\Today\app\src\main\res\font\lato" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.portfoliormm.today.data.model" />
+      <recent name="com.portfoliormm.today.data.model.dataclass" />
       <recent name="com.portfoliormm.today.presentation.ui" />
     </key>
   </component>
@@ -347,7 +368,15 @@ D      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/list_favourites
       <option name="project" value="LOCAL" />
       <updated>1734454732197</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Data_Class">
+      <option name="closed" value="true" />
+      <created>1734473441376</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1734473441376</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -366,6 +395,7 @@ D      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/list_favourites
     <MESSAGE value="Шрифты" />
     <MESSAGE value="Иконки, верстки основных экранов (кроме информационных (api)), элементы" />
     <MESSAGE value="Верстка" />
-    <option name="LAST_COMMIT_MESSAGE" value="Верстка" />
+    <MESSAGE value="Data_Class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Data_Class" />
   </component>
 </project>

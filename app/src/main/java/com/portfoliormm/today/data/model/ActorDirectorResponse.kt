@@ -1,6 +1,6 @@
-package com.portfoliormm.today.data.model.dataclass
+package com.portfoliormm.today.data.model
 
-data class ActorDirector(
+data class ActorDirectorResponse(
     val staffId: Int,
     val nameRu: String,
     val nameEn: String,
