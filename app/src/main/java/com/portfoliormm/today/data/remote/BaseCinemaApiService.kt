@@ -43,8 +43,8 @@ interface BaseCinemaApiService {
     ): FilterCinemaResponse
 
     @GET("//api/v2.2/films/premieres")
-    suspend fun getPremier(@Path("year ") year : Int, @Query("month ") month : String): PremiereResponse
+    suspend fun getPremier(@Query("year") year : Int, @Query("month") month : String): PremiereResponse
 
     @GET("/api/v1/staff")
-    suspend fun getActor(@Path("filmId  ") filmId  : Int): ActorDirectorResponse
+    suspend fun getActor(@Path("filmId") filmId  : Int): ActorDirectorResponse
 }

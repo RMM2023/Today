@@ -131,25 +131,21 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="582bf3ad-ba18-42cc-8f1d-a62fa94c8fd9" name="Changes" comment="Data_Class">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/remote/FilmsApiServise.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" />
+    <list default="true" id="582bf3ad-ba18-42cc-8f1d-a62fa94c8fd9" name="Changes" comment="Api запросы">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/di/KoinModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/domain/model/ActorDirectorData.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/domain/model/BaseCinemaData.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/domain/model/BudgetData.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/domain/model/FilmsByWordData.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/domain/model/FilterCinemaData.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/domain/model/PremierData.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/domain/model/WebsiteData.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/domain/repository/CinemaSearch.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/api/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/ActorDirector.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/ActorDirector.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/BaseCinemaData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/BaseCinemaData.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/Budget.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/Budget.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/Films.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/Films.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/FilterCinema.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/FilterCinema.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/Genres.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/Genres.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/ItemsBudget.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/ItemsBudget.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/ItemsPremiere.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/ItemsPremiere.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/ItemsWebsite.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/ItemsWebsite.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/KeyWord.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/KeyWord.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/Premiere.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/Premiere.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/Website.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/Website.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/dataclass/Сountries.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/model/Сountries.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/App.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/remote/BaseCinemaApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/remote/BaseCinemaApiService.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,9 +165,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="valueResourceFile" />
-        <option value="Kotlin Class" />
         <option value="resourceFile" />
         <option value="layoutResourceFile" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
         <option value="Kotlin Data Class" />
         <option value="Kotlin Interface" />
       </list>
@@ -376,7 +373,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734473441376</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Api запросы">
+      <option name="closed" value="true" />
+      <created>1734640456436</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1734640456436</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -396,6 +401,7 @@
     <MESSAGE value="Иконки, верстки основных экранов (кроме информационных (api)), элементы" />
     <MESSAGE value="Верстка" />
     <MESSAGE value="Data_Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Data_Class" />
+    <MESSAGE value="Api запросы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Api запросы" />
   </component>
 </project>
