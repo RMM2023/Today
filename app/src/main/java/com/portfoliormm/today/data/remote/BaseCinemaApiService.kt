@@ -29,8 +29,8 @@ interface BaseCinemaApiService {
 
     @GET("/api/v2.2/films")
     suspend fun getFilterCinema(
-        @Query("countries") countries: ArrayList<Int>,
-        @Query("genres") genres: ArrayList<Int>,
+        @Query("countries") countries: List<Int>,
+        @Query("genres") genres: List<Int>,
         @Query("order") order: String,
         @Query("type") type: String,
         @Query("ratingFrom") ratingFrom: Int,
