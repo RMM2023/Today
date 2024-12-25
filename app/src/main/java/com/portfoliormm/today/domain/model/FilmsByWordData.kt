@@ -14,7 +14,7 @@ fun FilmsByWordData.toData() : FilmsByWordResponse{
         this.keyword,
         this.pagesCount,
         this.searchFilmsCountResult,
-        this.films
+        this.films.map { it.toData() }
     )
 }
 fun FilmsByWordResponse.toDomain() : FilmsByWordData{
@@ -22,6 +22,6 @@ fun FilmsByWordResponse.toDomain() : FilmsByWordData{
         this.keyword,
         this.pagesCount,
         this.searchFilmsCountResult,
-        this.films
+        this.films.map { it.toDomain() }
     )
 }
