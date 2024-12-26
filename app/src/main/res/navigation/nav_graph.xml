@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainScreenFragment">
+
+    <fragment
+        android:id="@+id/tasksMainScreenFragment"
+        android:name="com.portfoliormm.today.presentation.ui.TasksMainScreenFragment"
+        android:label="TasksMainScreenFragment" >
+        <action
+            android:id="@+id/action_tasksMainScreenFragment_to_tasksDescriptionFragment"
+            app:destination="@id/tasksDescriptionFragment" />
+        <action
+            android:id="@+id/action_tasksMainScreenFragment_to_tasksEditFragment"
+            app:destination="@id/tasksEditFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myCultureFragment"
+        android:name="com.portfoliormm.today.presentation.ui.MyCultureFragment"
+        android:label="MyCultureFragment" />
+    <fragment
+        android:id="@+id/taskTodayEditFragment"
+        android:name="com.portfoliormm.today.presentation.ui.TaskTodayEditFragment"
+        android:label="TaskTodayEditFragment" />
+    <fragment
+        android:id="@+id/taskMainTodayScreenFragment"
+        android:name="com.portfoliormm.today.presentation.ui.TaskMainTodayScreenFragment"
+        android:label="fragment_tasks_main_screen"
+        tools:layout="@layout/fragment_tasks_main_screen" >
+        <action
+            android:id="@+id/action_taskMainTodayScreenFragment_to_taskTodayEditFragment"
+            app:destination="@id/taskTodayEditFragment" />
+        <action
+            android:id="@+id/action_taskMainTodayScreenFragment_to_taskTodayDescriptionFragment"
+            app:destination="@id/taskTodayDescriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskTodayDescriptionFragment"
+        android:name="com.portfoliormm.today.presentation.ui.TaskTodayDescriptionFragment"
+        android:label="fragment_tasks_description"
+        tools:layout="@layout/fragment_tasks_description" />
+    <fragment
+        android:id="@+id/mainScreenFragment"
+        android:name="com.portfoliormm.today.presentation.ui.MainScreenFragment"
+        android:label="MainScreenFragment" >
+        <action
+            android:id="@+id/action_mainScreenFragment_to_taskMainTodayScreenFragment"
+            app:destination="@id/taskMainTodayScreenFragment" />
+        <action
+            android:id="@+id/action_mainScreenFragment_to_tasksMainScreenFragment"
+            app:destination="@id/tasksMainScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tasksDescriptionFragment"
+        android:name="com.portfoliormm.today.presentation.ui.TasksDescriptionFragment"
+        android:label="TasksDescriptionFragment" />
+    <fragment
+        android:id="@+id/tasksEditFragment"
+        android:name="com.portfoliormm.today.presentation.ui.TasksEditFragment"
+        android:label="TasksEditFragment" />
+</navigation>

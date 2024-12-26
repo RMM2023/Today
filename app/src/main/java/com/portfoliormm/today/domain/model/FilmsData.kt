@@ -27,7 +27,7 @@ fun FilmsData.toData() : Films {
                 this.description,
                 this.filmLength,
                 this.country.map { it.toData() },
-                this.genre.toData(),
+                this.genre.map { it.toData() },
                 this.rating,
                 this.ratingVoteCount,
                 this.posterUrl,

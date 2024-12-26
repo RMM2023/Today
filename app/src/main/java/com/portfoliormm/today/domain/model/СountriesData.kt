@@ -12,3 +12,9 @@ fun СountriesData.toData() : Сountries{
         this.country
     )
 }
+fun Сountries.toDomain() : СountriesData{
+    return СountriesData(
+        this.id,
+        this.country
+    )
+}

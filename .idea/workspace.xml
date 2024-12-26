@@ -50,6 +50,11 @@
           <theme>@style/Theme.Today</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main_screen.xml">
+        <config>
+          <theme>@style/Theme.Today</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_my_cinema.xml">
         <config>
           <theme>@style/Theme.Today</theme>
@@ -125,16 +130,26 @@
           <theme>@style/Theme.Today</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml">
+        <config>
+          <theme>@style/Theme.Today</theme>
+        </config>
+      </layout>
     </layouts>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="582bf3ad-ba18-42cc-8f1d-a62fa94c8fd9" name="Changes" comment="Конвертеры">
+    <list default="true" id="582bf3ad-ba18-42cc-8f1d-a62fa94c8fd9" name="Changes" comment="Конвертеры2">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/presentation/ui/MainScreenFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_screen.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/navigaition/nav_graph.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/domain/model/FilmsByWordData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/domain/model/FilmsByWordData.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/domain/model/FilmsData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/domain/model/FilmsData.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/domain/model/СountriesData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/domain/model/СountriesData.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,13 +168,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="valueResourceFile" />
         <option value="resourceFile" />
         <option value="layoutResourceFile" />
         <option value="Kotlin File" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
         <option value="Kotlin Data Class" />
+        <option value="valueResourceFile" />
+        <option value="navigationResourceFile" />
       </list>
     </option>
   </component>
@@ -209,6 +225,7 @@
       <recent name="C:\Portfolio\Today\Today\app\src\main\java\com\portfoliormm\today\domain\repository" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Portfolio\Today\Today\app\src\main\res\navigaition" />
       <recent name="C:\Portfolio\Today\Today\app\src\main\res\drawable" />
       <recent name="C:\Portfolio\Today\Today\app\src\main\res\font" />
       <recent name="C:\Portfolio\Today\Today\app\src\main\res\font\lato" />
@@ -386,7 +403,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735045229880</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Конвертеры2">
+      <option name="closed" value="true" />
+      <created>1735140048524</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1735140048524</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -409,6 +434,7 @@
     <MESSAGE value="Api запросы" />
     <MESSAGE value="интерфейс" />
     <MESSAGE value="Конвертеры" />
-    <option name="LAST_COMMIT_MESSAGE" value="Конвертеры" />
+    <MESSAGE value="Конвертеры2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Конвертеры2" />
   </component>
 </project>
