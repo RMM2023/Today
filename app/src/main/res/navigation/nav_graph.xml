@@ -51,6 +51,15 @@
         <action
             android:id="@+id/action_mainScreenFragment_to_tasksMainScreenFragment"
             app:destination="@id/tasksMainScreenFragment" />
+        <action
+            android:id="@+id/action_mainScreenFragment_to_myCinemaFragment"
+            app:destination="@id/myCinemaFragment" />
+        <action
+            android:id="@+id/action_mainScreenFragment_to_myCultureFragment"
+            app:destination="@id/myCultureFragment" />
+        <action
+            android:id="@+id/action_mainScreenFragment_to_myWorkFragment"
+            app:destination="@id/myWorkFragment" />
     </fragment>
     <fragment
         android:id="@+id/tasksDescriptionFragment"
@@ -60,4 +69,50 @@
         android:id="@+id/tasksEditFragment"
         android:name="com.portfoliormm.today.presentation.ui.TasksEditFragment"
         android:label="TasksEditFragment" />
+    <fragment
+        android:id="@+id/infoCinemaFragment"
+        android:name="com.portfoliormm.today.presentation.ui.InfoCinemaFragment"
+        android:label="fragment_info_cinema"
+        tools:layout="@layout/fragment_info_cinema" />
+    <fragment
+        android:id="@+id/infoCultureFragment"
+        android:name="com.portfoliormm.today.presentation.ui.InfoCultureFragment"
+        android:label="fragment_info_culture"
+        tools:layout="@layout/fragment_info_culture" />
+    <fragment
+        android:id="@+id/listFavouritesCinemaFragment"
+        android:name="com.portfoliormm.today.presentation.ui.listFavouritesCinemaFragment"
+        android:label="fragment_list_favourites_cinema"
+        tools:layout="@layout/fragment_list_favourites_cinema" />
+    <fragment
+        android:id="@+id/listFavouritesCultureFragment"
+        android:name="com.portfoliormm.today.presentation.ui.listFavouritesCultureFragment"
+        android:label="fragment_list_favourites_culture"
+        tools:layout="@layout/fragment_list_favourites_culture" />
+    <fragment
+        android:id="@+id/myCinemaFragment"
+        android:name="com.portfoliormm.today.presentation.ui.MyCinemaFragment"
+        android:label="fragment_my_culture"
+        tools:layout="@layout/fragment_my_culture" >
+        <action
+            android:id="@+id/action_myCinemaFragment_to_infoCinemaFragment"
+            app:destination="@id/infoCinemaFragment" />
+        <action
+            android:id="@+id/action_myCinemaFragment_to_listFavouritesCinemaFragment"
+            app:destination="@id/listFavouritesCinemaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workEditFragment"
+        android:name="com.portfoliormm.today.presentation.ui.WorkEditFragment"
+        android:label="fragment_work_edit"
+        tools:layout="@layout/fragment_work_edit" />
+    <fragment
+        android:id="@+id/myWorkFragment"
+        android:name="com.portfoliormm.today.presentation.ui.MyWorkFragment"
+        android:label="fragment_my_work"
+        tools:layout="@layout/fragment_my_work" >
+        <action
+            android:id="@+id/action_myWorkFragment_to_workEditFragment"
+            app:destination="@id/workEditFragment" />
+    </fragment>
 </navigation>
