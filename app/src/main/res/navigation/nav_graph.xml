@@ -17,10 +17,6 @@
             app:destination="@id/tasksEditFragment" />
     </fragment>
     <fragment
-        android:id="@+id/myCultureFragment"
-        android:name="com.portfoliormm.today.presentation.ui.MyCultureFragment"
-        android:label="MyCultureFragment" />
-    <fragment
         android:id="@+id/taskTodayEditFragment"
         android:name="com.portfoliormm.today.presentation.ui.TaskTodayEditFragment"
         android:label="TaskTodayEditFragment" />
@@ -53,13 +49,16 @@
             app:destination="@id/tasksMainScreenFragment" />
         <action
             android:id="@+id/action_mainScreenFragment_to_myCinemaFragment"
-            app:destination="@id/myCinemaFragment" />
+            app:destination="@id/myCultureFragment" />
         <action
             android:id="@+id/action_mainScreenFragment_to_myCultureFragment"
             app:destination="@id/myCultureFragment" />
         <action
             android:id="@+id/action_mainScreenFragment_to_myWorkFragment"
             app:destination="@id/myWorkFragment" />
+        <action
+            android:id="@+id/action_mainScreenFragment_to_myCinemaFragment2"
+            app:destination="@id/myCinemaFragment" />
     </fragment>
     <fragment
         android:id="@+id/tasksDescriptionFragment"
@@ -71,17 +70,21 @@
         android:label="TasksEditFragment" />
     <fragment
         android:id="@+id/infoCinemaFragment"
-        android:name="com.portfoliormm.today.presentation.ui.InfoCinemaFragment"
+        android:name="com.portfoliormm.today.presentation.ui.fragments.cinema.InfoCinemaFragment"
         android:label="fragment_info_cinema"
         tools:layout="@layout/fragment_info_cinema" />
     <fragment
         android:id="@+id/infoCultureFragment"
         android:name="com.portfoliormm.today.presentation.ui.InfoCultureFragment"
         android:label="fragment_info_culture"
-        tools:layout="@layout/fragment_info_culture" />
+        tools:layout="@layout/fragment_info_culture" >
+        <action
+            android:id="@+id/action_infoCultureFragment_to_listFavouritesCultureFragment"
+            app:destination="@id/listFavouritesCultureFragment" />
+    </fragment>
     <fragment
         android:id="@+id/listFavouritesCinemaFragment"
-        android:name="com.portfoliormm.today.presentation.ui.listFavouritesCinemaFragment"
+        android:name="com.portfoliormm.today.presentation.ui.fragments.cinema.listFavouritesCinemaFragment"
         android:label="fragment_list_favourites_cinema"
         tools:layout="@layout/fragment_list_favourites_cinema" />
     <fragment
@@ -91,9 +94,9 @@
         tools:layout="@layout/fragment_list_favourites_culture" />
     <fragment
         android:id="@+id/myCinemaFragment"
-        android:name="com.portfoliormm.today.presentation.ui.MyCinemaFragment"
-        android:label="fragment_my_culture"
-        tools:layout="@layout/fragment_my_culture" >
+        android:name="com.portfoliormm.today.presentation.ui.fragments.cinema.MyCinemaFragment"
+        android:label="fragment_my_cinema"
+        tools:layout="@layout/fragment_my_cinema" >
         <action
             android:id="@+id/action_myCinemaFragment_to_infoCinemaFragment"
             app:destination="@id/infoCinemaFragment" />
@@ -114,5 +117,15 @@
         <action
             android:id="@+id/action_myWorkFragment_to_workEditFragment"
             app:destination="@id/workEditFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/myCultureFragment"
+        android:name="com.portfoliormm.today.presentation.ui.fragments.cinema.MyCinemaFragment"
+        android:label="fragment_my_culture"
+        tools:layout="@layout/fragment_my_culture" >
+        <action
+            android:id="@+id/action_myCultureFragment_to_infoCultureFragment"
+            app:destination="@id/infoCultureFragment" />
     </fragment>
 </navigation>

@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <item
+        android:id="@+id/descending_order"
+        android:icon="@drawable/arrow"
+        android:title="по убыванию А-Я"/>
+
+    <item
+        android:id="@+id/ascending_order"
+        android:icon="@drawable/up_arrow"
+        android:title="по возрастанию Я-А"/>
+
+    <item
+        android:id="@+id/by_date"
+        android:icon="@drawable/day_month"
+        android:title="по дате"/>
+
+    <item
+        android:id="@+id/by_importance"
+        android:icon="@drawable/star_filtr"
+        android:title="по важности"/>
+
 </menu>
