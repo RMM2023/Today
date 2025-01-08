@@ -7,8 +7,8 @@ import com.portfoliormm.today.domain.model.PremierData
 import kotlinx.coroutines.flow.Flow
 
 interface CinemaSearchRepository {
-    fun searchCinemaKeyWord(keyword : String, page : Int) : Flow<FilmsByWordData>
-    fun searchCinemaFilter(
+    suspend fun searchCinemaKeyWord(keyword : String, page : Int) : Flow<FilmsByWordData>
+    suspend fun searchCinemaFilter(
         countries: List<Int>,
         genres: List<Int>,
         order: String,
@@ -21,6 +21,6 @@ interface CinemaSearchRepository {
         keyword: String,
         page: Int
     ) : Flow<FilterCinemaData>
-    fun searchCinemaPremier(year : Int, month : String) : Flow<PremierData>
-    fun searchCinemaActor(filmId  : Int) : Flow<ActorDirectorData>
+    suspend fun searchCinemaPremier(year : Int, month : String) : Flow<PremierData>
+    suspend fun searchCinemaActor(filmId  : Int) : Flow<ActorDirectorData>
 }

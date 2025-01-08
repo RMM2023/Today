@@ -8,21 +8,21 @@ import com.portfoliormm.today.domain.repository.CinemaSearchRepository
 import kotlinx.coroutines.flow.Flow
 
 class CinemaSearchInteractor(val cinemaSearch : CinemaSearchRepository) {
-    fun searchCinemaKeyWord(keyword : String, page : Int) : Flow<FilmsByWordData>{
+    suspend fun searchCinemaKeyWord(keyword : String, page : Int) : Flow<FilmsByWordData>{
         return cinemaSearch.searchCinemaKeyWord(keyword, page)
     }
-    fun searchCinemaFilter(
-        countries: List<Int>,
-        genres: List<Int>,
-        order: String,
-        type: String,
-        ratingFrom: Int,
-        ratingTo: Int,
-        yearFrom: Int,
-        yearTo: Int,
-        imdbId: String,
-        keyword: String,
-        page: Int
+    suspend fun searchCinemaFilter(
+        countries: List<Int> = emptyList(),
+        genres: List<Int> = emptyList(),
+        order: String = "RATING",
+        type: String = "ALL",
+        ratingFrom: Int = 0,
+        ratingTo: Int = 10,
+        yearFrom: Int = 1000,
+        yearTo: Int = 3000,
+        imdbId: String = "",
+        keyword: String = "",
+        page: Int = 1
     ) : Flow<FilterCinemaData>{
         return cinemaSearch.searchCinemaFilter(countries,
             genres,
@@ -30,15 +30,16 @@ class CinemaSearchInteractor(val cinemaSearch : CinemaSearchRepository) {
             type,
             ratingFrom,
             ratingTo,
+            yearFrom,
             yearTo,
             imdbId,
             keyword,
             page)
     }
-    fun searchCinemaPremier(year : Int, month : String) : Flow<PremierData>{
+    suspend fun searchCinemaPremier(year : Int, month : String) : Flow<PremierData>{
         return cinemaSearch.searchCinemaPremier(year,month)
     }
-    fun searchCinemaActor(filmId  : Int) : Flow<ActorDirectorData>{
+    suspend fun searchCinemaActor(filmId  : Int) : Flow<ActorDirectorData>{
         return cinemaSearch.searchCinemaActor(filmId)
     }
 }

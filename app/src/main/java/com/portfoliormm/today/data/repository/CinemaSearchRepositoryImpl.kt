@@ -12,7 +12,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 
 class CinemaSearchRepositoryImpl (val baseCinemaApi: BaseCinemaApiService) : CinemaSearchRepository {
-    override fun searchCinemaKeyWord(keyword: String, page: Int): Flow<FilmsByWordData> = flow {
+    override suspend fun searchCinemaKeyWord(keyword: String, page: Int): Flow<FilmsByWordData> = flow {
         try {
             val response = baseCinemaApi.getFilmsByKeyword(keyword, page)
             val data = response.toDomain()
@@ -22,7 +22,7 @@ class CinemaSearchRepositoryImpl (val baseCinemaApi: BaseCinemaApiService) : Cin
         }
     }
 
-    override fun searchCinemaFilter(
+    override suspend fun searchCinemaFilter(
         countries: List<Int>,
         genres: List<Int>,
         order: String,
@@ -56,7 +56,7 @@ class CinemaSearchRepositoryImpl (val baseCinemaApi: BaseCinemaApiService) : Cin
         }
     }
 
-    override fun searchCinemaActor(filmId): Flow<ActorDirectorData> = flow {
+    override suspend fun searchCinemaActor(filmId : Int): Flow<ActorDirectorData> = flow {
         try {
             val response = baseCinemaApi.getActor(filmId)
             val data = response.toDomain()
@@ -66,7 +66,7 @@ class CinemaSearchRepositoryImpl (val baseCinemaApi: BaseCinemaApiService) : Cin
         }
     }
 
-    override fun searchCinemaPremier(year: Int, month: String): Flow<PremierData> = flow {
+    override suspend fun searchCinemaPremier(year: Int, month: String): Flow<PremierData> = flow {
         try {
             val response = baseCinemaApi.getPremier(year, month)
         }catch (e : Exception){
