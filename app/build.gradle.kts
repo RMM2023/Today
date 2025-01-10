@@ -59,6 +59,9 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
     implementation(libs.koin.android)
+    implementation (libs.koin.koin.android)
+    implementation (libs.okhttp)
+    implementation (libs.logging.interceptor)
 
     val roomVersion = "2.6.1"
     implementation(libs.androidx.room.runtime)
