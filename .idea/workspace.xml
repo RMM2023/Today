@@ -161,16 +161,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="582bf3ad-ba18-42cc-8f1d-a62fa94c8fd9" name="Changes" comment="меню, интерактор, навигация, доделки">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/presentation/ui/fragments/cinema/CinemaAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/presentation/ui/fragments/cinema/CinemaViewHolder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/presentation/viewmodel/CinemaViewModel.kt" afterDir="false" />
+    <list default="true" id="582bf3ad-ba18-42cc-8f1d-a62fa94c8fd9" name="Changes" comment="классы для RV Cinema">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/repository/CinemaSearchRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/data/repository/CinemaSearchRepositoryImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/domain/interactor/CinemaSearchInteractor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/domain/interactor/CinemaSearchInteractor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/domain/repository/CinemaSearchRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/domain/repository/CinemaSearchRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/presentation/ui/fragments/cinema/MyCinemaFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/presentation/ui/fragments/cinema/MyCinemaFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_cinema.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_cinema.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/presentation/ui/fragments/cinema/CinemaAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/portfoliormm/today/presentation/ui/fragments/cinema/CinemaAdapter.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -461,7 +454,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735393071222</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="классы для RV Cinema">
+      <option name="closed" value="true" />
+      <created>1736352265350</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1736352265350</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -488,6 +489,7 @@
     <MESSAGE value="grapf_nav" />
     <MESSAGE value="Систематизация проекта" />
     <MESSAGE value="меню, интерактор, навигация, доделки" />
-    <option name="LAST_COMMIT_MESSAGE" value="меню, интерактор, навигация, доделки" />
+    <MESSAGE value="классы для RV Cinema" />
+    <option name="LAST_COMMIT_MESSAGE" value="классы для RV Cinema" />
   </component>
 </project>
