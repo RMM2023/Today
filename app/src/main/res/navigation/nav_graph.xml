@@ -8,13 +8,14 @@
     <fragment
         android:id="@+id/tasksMainScreenFragment"
         android:name="com.portfoliormm.today.presentation.ui.TasksMainScreenFragment"
-        android:label="TasksMainScreenFragment" >
+        android:label="TasksMainScreenFragment"
+        tools:layout="@layout/fragment_tasks_main_screen">
         <action
             android:id="@+id/action_tasksMainScreenFragment_to_tasksDescriptionFragment"
             app:destination="@id/tasksDescriptionFragment" />
         <action
             android:id="@+id/action_tasksMainScreenFragment_to_tasksEditFragment"
-            app:destination="@id/tasksEditFragment" />
+            app:destination="@id/tasksEditFragment"/>
     </fragment>
     <fragment
         android:id="@+id/taskTodayEditFragment"
@@ -40,7 +41,8 @@
     <fragment
         android:id="@+id/mainScreenFragment"
         android:name="com.portfoliormm.today.presentation.ui.MainScreenFragment"
-        android:label="MainScreenFragment" >
+        android:label="MainScreenFragment"
+        tools:layout="@layout/fragment_main_screen">
         <action
             android:id="@+id/action_mainScreenFragment_to_taskMainTodayScreenFragment"
             app:destination="@id/taskMainTodayScreenFragment" />
@@ -63,7 +65,8 @@
     <fragment
         android:id="@+id/tasksDescriptionFragment"
         android:name="com.portfoliormm.today.presentation.ui.TasksDescriptionFragment"
-        android:label="TasksDescriptionFragment" />
+        android:label="TasksDescriptionFragment"
+        tools:layout="@layout/fragment_tasks_description"/>
     <fragment
         android:id="@+id/tasksEditFragment"
         android:name="com.portfoliormm.today.presentation.ui.TasksEditFragment"

@@ -73,7 +73,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/background_card3"
+        android:id="@+id/button_cinema"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         app:layout_constraintTop_toBottomOf="@+id/background_card2"
@@ -94,7 +94,7 @@
         android:id="@+id/background_card4"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        app:layout_constraintTop_toBottomOf="@+id/background_card3"
+        app:layout_constraintTop_toBottomOf="@+id/button_cinema"
         android:layout_marginTop="50dp"
         app:cardBackgroundColor="@color/yellow"
         app:cardElevation="4dp">
@@ -112,7 +112,7 @@
         android:id="@+id/background_card5"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        app:layout_constraintTop_toBottomOf="@+id/background_card3"
+        app:layout_constraintTop_toBottomOf="@+id/button_cinema"
         android:layout_marginTop="50dp"
         app:cardBackgroundColor="@color/bright_green"
         app:cardElevation="4dp">

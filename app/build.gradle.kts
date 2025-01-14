@@ -58,8 +58,8 @@ dependencies {
     annotationProcessor(libs.compiler)
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
-    implementation(libs.koin.android)
-    implementation (libs.koin.koin.android)
+    implementation("io.insert-koin:koin-android:4.1.0")
+    implementation ("io.insert-koin:koin-android-compat:4.1.0")
     implementation (libs.okhttp)
     implementation (libs.logging.interceptor)
 

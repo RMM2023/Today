@@ -39,7 +39,7 @@ class MyCinemaFragment : Fragment() {
 
     fun setupListeners(){
 
-    //здесь будет кликабельность кнопок
+    //здесь будет кликабельность кнопки фильтр
     }
 
     fun setupAdapters(){
