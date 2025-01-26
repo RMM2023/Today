@@ -1,7 +1,7 @@
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
-    id("kotlin-kapt")
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.ksp)
     id("kotlin-parcelize")
 }
 
@@ -29,11 +29,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "17"
     }
     buildFeatures {
         viewBinding = true
@@ -55,17 +55,16 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit.v115)
     androidTestImplementation(libs.androidx.espresso.core.v351)
-    annotationProcessor(libs.compiler)
+    ksp(libs.compiler)
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
-    implementation("io.insert-koin:koin-android:4.1.0")
-    implementation ("io.insert-koin:koin-android-compat:4.1.0")
-    implementation (libs.okhttp)
-    implementation (libs.logging.interceptor)
+    implementation("io.insert-koin:koin-android:3.5.0")
+    implementation("io.insert-koin:koin-core:3.5.0")
+    implementation("io.insert-koin:koin-androidx-compose:3.5.0")
+    implementation(libs.okhttp)
+    implementation(libs.logging.interceptor)
 
-    val roomVersion = "2.6.1"
     implementation(libs.androidx.room.runtime)
-    kapt(libs.androidx.room.compiler)
+    ksp(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)
-
 }
